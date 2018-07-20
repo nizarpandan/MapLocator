@@ -1,0 +1,15 @@
+﻿{
+	"Colors": {
+		"Favorite": "blue"
+	},
+	"ConnectionStrings": {
+		"DutchConnectionString": "server=DESKTOP-ME5SBQT\\SQLEXPRESS;Database=MapLocator;Integrated Security=true;MultipleActiveResultSets=true",
+		"LaptopConnectionString": "server=LT-15-573;Database=MapLocator;Integrated Security=true;MultipleActiveResultSets=true"
+	},
+	"Logging": {
+			"LogLevel": {
+					"Default": "Information",
+					"Microsoft":  "Warning"
+			}
+	}
+}
