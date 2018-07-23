@@ -8,6 +8,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.EntityFrameworkCore;
+using MapLocator.Data.Entities;
+using Microsoft.AspNetCore.Identity;
 
 namespace MapLocator.Data
 {
@@ -22,6 +24,7 @@ namespace MapLocator.Data
 
 		public void ConfigureServices(IServiceCollection services)
         {
+			services.AddIdentity<StoreUser, IdentityRole>();
 			services.AddDbContext<DutchContext>(cfg =>
 			{
 				cfg.UseSqlServer(_config.GetConnectionString("LaptopConnectionString"));
@@ -45,7 +48,7 @@ namespace MapLocator.Data
 				using (var scope = app.ApplicationServices.CreateScope())
 				{
 					var seeder = scope.ServiceProvider.GetService<DutchSeeder>();
-					seeder.Seed();
+					seeder.Seed().Wait();
 				}
 			}
         }

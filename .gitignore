@@ -1,0 +1,11 @@
+.vs/MapLocator/v15/.suo
+.vs/MapLocator/v15/Server/sqlite3/storage.ide-shm
+.vs/MapLocator/v15/Server/sqlite3/storage.ide
+.vs/MapLocator/v15/Server/sqlite3/storage.ide-wal
+MapLocator.Data/bin/Debug/netcoreapp2.1/MapLocator.Data.dll
+MapLocator.Data/bin/Debug/netcoreapp2.1/MapLocator.Data.pdb
+MapLocator.Data/obj/Debug/netcoreapp2.1/MapLocator.Data.dll
+MapLocator.Data/obj/Debug/netcoreapp2.1/MapLocator.Data.pdb
+MapLocator.Data/obj/Debug/netcoreapp2.1/MapLocator.Data.csproj.CoreCompileInputs.cache
+MapLocator.Data/obj/MapLocator.Data.csproj.nuget.cache
+MapLocator.Data/obj/MapLocator.Data.csproj.nuget.g.props
